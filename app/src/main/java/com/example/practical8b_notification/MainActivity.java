@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setSmallIcon(R.drawable.ic_launcher_background);
                 builder.setAutoCancel(true);
                 NotificationManagerCompat managerCompat=NotificationManagerCompat.from(MainActivity.this);
-                managerCompat.notify(1,builder.build());
+                managerCompat.notify(1,builder.build()); // This not an error
 
             }
         });

@@ -12,13 +12,11 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
     private Button sendNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         sendNotice = (Button) findViewById(R.id.send_notice);
         if(Build.VERSION.SDK_INT >=Build.VERSION_CODES.O){
